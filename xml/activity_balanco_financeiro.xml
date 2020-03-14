@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activity_balanco_financeiro_chefe"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/activity_balanco_financeiro_chefe_saldo"
+        android:layout_width="150dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="-27dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:text="20,00"
+        android:textSize="20dp"
+        android:textAlignment="viewEnd"/>
+
+    <TextView
+        android:id="@+id/activity_balanco_financeiro_funcionario"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/activity_balanco_financeiro_funcionario_saldo_total"
+        android:layout_width="150dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-27dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:text="20,00"
+        android:textSize="20dp"
+        android:textAlignment="viewEnd"/>
+
+    <TextView
+        android:id="@+id/activity_balanco_financeiro_funcionario_desconto"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/activity_balanco_financeiro_funcionario_saldo_com_desconto"
+        android:layout_width="150dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-27dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:text="20,00"
+        android:textSize="20dp"
+        android:textAlignment="viewEnd"/>
+
+    <TextView
+        android:id="@+id/activity_balanco_financeiro_lucro_liquido_do_dia"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/activity_balanco_financeiro_saldo_liquido_do_dia"
+        android:layout_width="150dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-27dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:text="20,00"
+        android:textSize="20dp"
+        android:textAlignment="viewEnd"/>
+
+    <TextView
+        android:id="@+id/activity_balanco_financeiro_valor_total_diario"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/activity_balanco_financeiro_saldo_total_diario"
+        android:layout_width="150dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-27dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:text="20,00"
+        android:textSize="20dp"
+        android:textAlignment="viewEnd"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/activity_balanco_financeiro_fab_adiciona_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="50dp"
+
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_action_botao_criar_cliente"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+
+        </ListView>
+    </RelativeLayout>
+
+
+</LinearLayout>

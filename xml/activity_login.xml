@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".modelo.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/activity_login_text_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:textAlignment="center"
+        android:inputType="text"
+
+        android:hint="User / Usuário" />
+
+    <EditText
+        android:id="@+id/activity_login_text_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password / Senha"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/activity_login_fab_botao_logar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_action_botao_logar" />
+
+
+</LinearLayout>
