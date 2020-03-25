@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_novo_cliente_form_cliente_id"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="20dp"
+                android:text="ID-01 "
+                android:textAppearance="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/activity_novo_cliente_form_cliente_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="26dp"
+                android:hint="Cliente "
+                android:inputType="textCapWords"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/activity_novo_cliente_form_cliente_valor"
+                android:layout_width="130dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:hint="Valor"
+                android:inputType="numberSigned"
+                android:paddingRight="15dp"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="10dp"
+                android:text="Observações"
+                android:textSize="20dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/activity_novo_cliente_form_cliente_observacoes"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginRight="26dp"
+                        android:autofillHints="@string/bottom_sheet_behavior"
+                        android:hint="exemplo: falta troco, deixou caixinha"
+                        android:inputType="textMultiLine"
+
+                        android:textSize="25dp" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/activity_novo_cliente_form_fab_adiciona_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="-70dp"
+                android:layout_marginLeft="320dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@android:drawable/ic_menu_upload" />
+
+</LinearLayout>
